@@ -1,4 +1,7 @@
 package pl.rliszcz.githubproxy;
 
-public class Branch {
+public record Branch(
+        String name,
+        String lastCommitSha
+) {
 }

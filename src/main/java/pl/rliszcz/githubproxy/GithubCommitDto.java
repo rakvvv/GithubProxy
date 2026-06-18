@@ -1,4 +1,6 @@
 package pl.rliszcz.githubproxy;
 
-public class GithubCommitDto {
+public record GithubCommitDto(
+        String sha
+) {
 }

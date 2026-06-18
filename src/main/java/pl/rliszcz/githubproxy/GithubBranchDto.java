@@ -1,4 +1,7 @@
 package pl.rliszcz.githubproxy;
 
-public class GithubBranchDto {
+public record GithubBranchDto(
+        String name,
+        GithubCommitDto commit
+) {
 }

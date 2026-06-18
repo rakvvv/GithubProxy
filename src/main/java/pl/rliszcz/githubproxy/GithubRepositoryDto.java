@@ -1,4 +1,8 @@
 package pl.rliszcz.githubproxy;
 
-public class GithubRepositoryDto {
+public record GithubRepositoryDto(
+        String name,
+        GithubOwnerDto owner,
+        boolean fork
+) {
 }

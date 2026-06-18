@@ -1,4 +1,7 @@
 package pl.rliszcz.githubproxy;
 
-public class ErrorResponseDto {
+public record ErrorResponseDto(
+        int status,
+        String message
+) {
 }

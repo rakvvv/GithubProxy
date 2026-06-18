@@ -1,11 +1,10 @@
 package pl.rliszcz.githubproxy;
 
-
 import java.util.List;
 
-public record Repository(
+public record RepositoryResponseDto(
         String repositoryName,
         String ownerLogin,
-        List<Branch> branches
+        List<BranchResponseDto> branches
 ) {
 }

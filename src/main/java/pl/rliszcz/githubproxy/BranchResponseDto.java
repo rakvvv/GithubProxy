@@ -1,4 +1,7 @@
 package pl.rliszcz.githubproxy;
 
-public class BranchResponseDto {
+public record BranchResponseDto(
+        String name,
+        String lastCommitSha
+) {
 }
